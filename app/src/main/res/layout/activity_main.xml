@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mr. Potato Head"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="344dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/body" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Checck his part to add/remove them!"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <GridLayout
+        android:layout_width="305dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="8dp"
+        android:columnCount="2"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.029">
+
+        <CheckBox
+            android:id="@+id/hat"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Hat" />
+
+        <CheckBox
+            android:id="@+id/eyes"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Eyes" />
+
+        <CheckBox
+            android:id="@+id/eyebrows"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Eyebrows" />
+
+        <CheckBox
+            android:id="@+id/glasses"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Glasses" />
+
+        <CheckBox
+            android:id="@+id/nose"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Nose" />
+
+        <CheckBox
+            android:id="@+id/mouth"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Mouth" />
+
+
+        <CheckBox
+            android:id="@+id/mushtache"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Mushtache" />
+
+        <CheckBox
+            android:id="@+id/ears"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Ears" />
+
+        <CheckBox
+            android:id="@+id/arms"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Arms" />
+
+        <CheckBox
+            android:id="@+id/shoes"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="10dp"
+            android:text="Shoes" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imgHat"
+        android:layout_width="152dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/hat" />
+
+    <ImageView
+        android:id="@+id/imgEar"
+        android:layout_width="189dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.256"
+        app:srcCompat="@drawable/ears" />
+
+    <ImageView
+        android:id="@+id/imgEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imgEar"
+        app:layout_constraintStart_toStartOf="@+id/imgEar"
+        app:layout_constraintTop_toBottomOf="@+id/imgHat"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/eyes" />
+
+    <ImageView
+        android:id="@+id/imgEyebrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgEar"
+        app:layout_constraintEnd_toEndOf="@+id/imgEyes"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/imgEyes"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/eyebrows" />
+
+    <ImageView
+        android:id="@+id/imgGlasses"
+        android:layout_width="148dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.321"
+        app:srcCompat="@drawable/glasses" />
+
+    <ImageView
+        android:id="@+id/imgArms"
+        android:layout_width="253dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.581"
+        app:srcCompat="@drawable/arms" />
+
+    <ImageView
+        android:id="@+id/imagMouth"
+        android:layout_width="99dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imgArms"
+        app:layout_constraintVertical_bias="0.354"
+        app:srcCompat="@drawable/mouth" />
+
+    <ImageView
+        android:id="@+id/imgMushachte"
+        android:layout_width="119dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.591"
+        app:srcCompat="@drawable/moustache" />
+
+    <ImageView
+        android:id="@+id/imagNose"
+        android:layout_width="79dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.472"
+        app:srcCompat="@drawable/nose" />
+
+    <ImageView
+        android:id="@+id/imgShoes"
+        android:layout_width="214dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.922"
+        app:srcCompat="@drawable/shoes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
